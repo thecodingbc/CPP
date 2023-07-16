@@ -1,0 +1,18 @@
+4 4
+H...
+.H..
+..HH
+..HH
+
+Sample Output 1
+Oh, bother. There are 3 pools of hunny.
+
+
+3 2
+.H
+.H
+H.
+
+
+Sample Output 2
+Oh, bother. There are 2 pools of hunny.

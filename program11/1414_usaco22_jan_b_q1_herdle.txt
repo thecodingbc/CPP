@@ -1,0 +1,31 @@
+
+AAA
+BBB
+CCC
+AYY
+AAA
+ZZZ
+
+Correct Answer:
+1
+2
+
+explanation:
+1 green (A at [0, 0]), 2 yellow (2A is correct but wrong place)
+
+
+COW
+SAY
+MOO
+WIN
+THE
+IOI
+
+Correct Answer:
+1
+1
+
+explanation:
+1 green (O at [2, 1]), 1 yellow (W is correct but wrong place)
+
+
