@@ -1,0 +1,96 @@
+=============================================
+FORMAT SUMMARY  
+=============================================
+
+%s    string
+
+%c    char
+
+%f    float       keeps 6 digits after the decimal point
+%.2f  float       keeps 2 digits after the decimal point
+%8.2f float       Use 8 spaces in total, keep the number to the right, keeps 2 digits after the decimal point
+
+=============================================
+char s[] = "Hello"    c style string
+=============================================
+
+strlen(s)               returns length of s                                             0223
+scanf("%s", s)          read from console, stops as soon as it seems space / tab        0225
+sprintf(s, "%d", 5)     write format string to s                                        0227
+strstr(s, "el")         returns "ello", meaning string "el" exists in "Hello"           0230
+strstr(s, "EL")         returns NULL, meaning string "EL" doesn't exist in "Hello"      0230
+
+strchr(s, 'e')         returns "ello", meaning char 'e' exists in "Hello"               0233
+strchr(s, 'E')         returns NULL, meaning char 'E' doesn't exist in "Hello"          0233
+
+fgets(s, 5, fp)        reads whole line from file pointer fp (max reads 4 char)         0255
+fgets(s, 5, stdin)     reads whole line from console (max reads 4 char)                 0255
+
+puts(s)                equals to printf("%s\n", s), print s to console                  0276 
+
+=============================================
+char c
+=============================================
+
+fgetc(fp)           reads a character from file pointer fp as a int value               0260
+                    you need to cast it to char
+
+fgetc(stdin)        reads a character from console as a int value                       0262
+                    you need to cast it to char
+
+getchar()           equals to fgetc(stdin), exactly the same                            0269
+
+putchar(c)          equals to printf("%c", c), print c to console                       0276
+
+
+
+
+
+=====================================================================================================================
+string str = "highway_highway"             C++ style string
+=====================================================================================================================
+
+cin >> str                                     read from console, stops as soon as it seems space / tab           0282
+getline(cin, str)                              reads whole line from console                                      0282
+                          
+str.length()                                   returns 7 - str length                                             0282
+str.size()                                     returns 7 - str length - same as length()                          0282
+                          
+str.append("!")                                append "!" to str                                                  0284  
+str += "!"                                     same as above                                                      0284  
+                          
+                          
+str.begin()                                    returns string::iterator which points to head of str               0286
+str.end()                                      returns string::iterator which points to "one past the end"        0286
+                          
+                          
+str.find("way")                                returns 4 - the index of 1st "way"                                 0290
+str.find("way", 5)                             returns 12 - the index of 2nd "way"                                0290
+                          
+str.rfind("way")                               returns 12 - the index of 2nd "way"                                0290
+str.rfind("way", 11)                           returns 4 - the index of 2nd "way"                                 0290
+                          
+str.erase(4, 3)                                delete 3 chars from index 4, str is "high_highway" now             0293
+str.erase(str.begin())                         delete char pointed by iterator, str is "ighway_highway" now       0293
+str.erase(str.begin(), str.end())              delete char range [str.begin(), str.end()), str is empty           0293
+               
+str.substr(4, 3)                               return 3 chars from index 4, return "way"                          0296
+str.replace(begin(str), end(str) - 2, "st")    erase the part specified, replaced with "st", str is "stay" now    0296
+
+
+
+
+
+
+
+
+
+=============================================
+file
+=============================================
+
+freopen("in.txt", "r", stdin)           read input from file instead of console         0050
+freopen("output.txt", "w", stdout)      write output to file instead of console         0050
+
+fopen("1.txt", "r")                     return a FILE* file pointer fp                  0255
+fclose(fp)                              close file pointer fp                           0255

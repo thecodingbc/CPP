@@ -1,0 +1,21 @@
+8
+10
+9
+8
+7
+6
+5
+4
+3
+400
+
+
+
+2
+3
+8
+198000
+
+
+you can put multiple groups of test data here.
+Your program will automatically run against the 1st group.
